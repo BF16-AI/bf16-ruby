@@ -29,4 +29,9 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-      - uses: rubygems/release-gem@v1
+      - uses: rubygems/configure-rubygems-credentials@v2
+        with:
+          owner: '256941'
+      - run: |
+          gem build bf16.gemspec
+          gem push bf16-*.gem
