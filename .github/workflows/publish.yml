@@ -29,7 +29,7 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-      - uses: rubygems/configure-rubygems-credentials@v2
+      - uses: rubygems/configure-rubygems-credentials@c6ca7f4bac0e29c9bde8eeae0a0a986b27efa05f # v2.2.0
         with:
           owner: '256941'
       - run: |
